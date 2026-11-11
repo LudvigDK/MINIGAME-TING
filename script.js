@@ -5,3 +5,7 @@ function shiftPage(toPageId) {
     const toPage = document.getElementById(toPageId);
     toPage.classList.add('show');
 }
+
+function gameClose() {
+    window.close();
+}
