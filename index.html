@@ -8,7 +8,16 @@
     </head>
     <body>
         <main>
-            <div class="page show" id="homePage"></div>
+            <div class="page show" id="homePage">
+                <h1>Luder og Dj G-Strengs store verden™</h1>
+                <button onclick="gameClose()" id="closeBtn">Sluk spillet</button>
+                <button onclick="shiftPage('gamePage')" id="startBtn">Start spillet ⚙️</button>
+                <button onclick="shiftPage('settingsPage')" id="settingsBtn">Indstillinger</button>
+            </div>
+            <div class="page" id="settingsPage">
+                <h1>Indstillinger</h1>
+                <button onclick="shiftPage('homePage')" id="backBtn">Tilbage</button>
+            </div>
         </main>
     </body>
     <script src="script.js"></script>

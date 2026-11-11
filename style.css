@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .page {
@@ -10,14 +11,74 @@
     height: 100vh;
 }
 
-#homePage {
-    background-color: #1f19c2;
-}
-
-#gamePage {
-    background-color: #952727;
-}
-
 .show {
     display: block;
+}
+
+#homePage.show {
+    display: flex;
+}
+
+#homePage {
+    background-color: #258891;
+    align-items: center;
+    flex-direction: column;
+}
+
+#homePage h1 {
+    margin-top: 180px;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 3rem;
+}
+
+#startBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+#closeBtn {
+    margin-top: 20px;
+    height: 80px;
+    background-color: #36e7f4;
+    box-shadow: 0px 0px 20px 5px #36e7f4;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#settingsBtn {
+    margin-top: 20px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #bbf436;
+    color: #bbf436;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#settingsPage {
+    background-color: #258891;
+}
+
+#settingsPage #backBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
