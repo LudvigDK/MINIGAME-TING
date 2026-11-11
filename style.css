@@ -1,0 +1,23 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+#homePage {
+    background-color: #1f19c2;
+}
+
+#gamePage {
+    background-color: #952727;
+}
+
+.show {
+    display: block;
+}
