@@ -9,7 +9,7 @@ class Game {
     }
     registerUpdate(callback, priority) {
         this.updateCallbacks.push([callback, priority])
-        this.updateCallbacks.sort((x, y) => {
+        this.updateCallbacks = this.updateCallbacks.sort((x, y) => {
             if (x[1] < y[1])
                 return -1
             if (x[1] > y[1])
@@ -27,4 +27,14 @@ class Game {
     }
 }
 
-window.Game = new Game()
+function shiftPage(toPageId) {
+    const allPagesWithShowClass = document.querySelectorAll('.page.show');
+    allPagesWithShowClass.forEach(page => page.classList.remove('show'));
+
+    const toPage = document.getElementById(toPageId);
+    toPage.classList.add('show');
+}
+
+function gameClose() {
+    window.close();
+}
