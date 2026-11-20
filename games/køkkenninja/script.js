@@ -1,6 +1,7 @@
 class KoekkenNinjaGame extends Game {
-    constructor(player_id) {
-        this.player_id = player_id
+    constructor(fruit_speed) {
+        super()
+        this.fruit_speed
         this.fruits_hit = 0
     }
 }

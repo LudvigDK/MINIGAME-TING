@@ -1,7 +1,9 @@
 class SimonCrackGame extends Game {
-    constructor() {
+    constructor(gravity, ice_cube_force) {
         super();
         this.ice_cubes_hit = 0;
+        this.gravity = gravity;
+        this.ice_cube_force = ice_cube_force;
     }
 }
 
