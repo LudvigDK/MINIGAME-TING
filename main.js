@@ -19,7 +19,7 @@ class Game {
         })
     }
     registerUpdate(callback, priority) {
-        this.updateCallbacks.push([callback, priority])
+        const index = this.updateCallbacks.push([callback, priority]) - 1
         this.updateCallbacks = this.updateCallbacks.sort((x, y) => {
             if (x[1] < y[1])
                 return -1
@@ -27,7 +27,11 @@ class Game {
                 return 1
             return 0
         })
-        // console.log(this.updateCallbacks)
+        console.log(this.updateCallbacks)
+        return index
+    }
+    removeUpdate(index) {
+        this.updateCallbacks.splice(index, 1)
     }
     update() {
         if (this.lastUpdate)
