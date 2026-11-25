@@ -5,4 +5,4 @@ class KoekkenNinjaGame extends Game {
     }
 }
 
-window.Game = new Game()
+window.Game = new KoekkenNinjaGame()
